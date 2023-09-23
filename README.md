@@ -1,7 +1,5 @@
 ## Sample Python REST API application using [FastAPI](https://fastapi.tiangolo.com/) ,[Uvicorn](https://www.uvicorn.org/#introduction) and [SQLAlchemy](https://www.sqlalchemy.org/)
 
-![alt text](FastAPI.png)
-
 ### FastAPI
 
 FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python type hints.
@@ -67,7 +65,6 @@ Dependencies will be installed from the requirements.txt file. Python version 3.
 
 ```
 uvicorn main:app
-
 ```
 
 This will start the application on port 8000
@@ -80,3 +77,8 @@ We can visit http://127.0.0.1:9000/docs in our browser to see the interactive AP
 ![alt text](sample-FastAPI.png)
 
 The server will start at <http://localhost:8000/docs>.
+
+We can Trace the endpoint hitted on Swagger UI on Jaeger dashboard.
+
+
+![alt text](Jaeger-UI.png)
