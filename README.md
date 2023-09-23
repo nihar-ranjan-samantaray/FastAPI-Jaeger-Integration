@@ -44,7 +44,7 @@ pydantic enforces type hints at runtime, and provides user-friendly errors when 
 ```
 docker run -d --name jaeger -p 16686:16686 -p 4317:4317 jaegertracing/opentelemetry-all-in-one:latest
 ```
-
+We can visit http://localhost:16686/ in our browser to see the Jaeger UI and Jaeger endpoint for local system will be localhost:4317
 
 ## Setting up the VirtualEnv
 
@@ -66,11 +66,11 @@ Dependencies will be installed from the requirements.txt file. Python version 3.
 ## Run the Application
 
 ```
-python main.py
+uvicorn main:app
 
 ```
 
-This will start the application on port 9000
+This will start the application on port 8000
 
 ## Test the application
 
@@ -79,4 +79,4 @@ We can visit http://127.0.0.1:9000/docs in our browser to see the interactive AP
 
 ![alt text](sample-FastAPI.png)
 
-The server will start at <http://localhost:9000/docs>.
+The server will start at <http://localhost:8000/docs>.
